@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Greeting, CSS</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="inner_container">
+        <img class="icon" src="./icon_date.png" alt="date">
+        <p>2017-7-16 17:00-18:00</p>
+      </div>
+
+      <div class="inner_container">
+        <img class="icon" src="./icon_location.png" alt="location">
+        <p>滨江区长河街道网商路599号网易大厦B座3F-10号会议室</p>
+      </div>
+      <br>
+
+      <div class="line"></div>
+
+      <div class="button_container">
+        <button type="">Accept</button>
+        <button type="">Pending</button>
+        <button type="">Deny</button>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    .container {
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      border: 15px solid transparent;
+      border-image: url(border.png) 30 round;
+    }
+
+    .inner_container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .button_container {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .icon {
+      width: 39px;
+      height: 39px;
+      padding: 10 10 0 0;
+    }
+
+    .line {
+      margin: 0;
+      padding: 0;
+      width: auto;
+      height: 2px;
+      background-color: lightslategray;
+      overflow: hidden;
+    }
+  </style>
+</html>
